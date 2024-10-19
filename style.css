@@ -19,7 +19,7 @@ body {
     margin-top: 0;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FF4081;
+    color: #ff4545ed;
 }
 
 h2 {
@@ -34,7 +34,7 @@ h2 {
 }
 
 .button {
-    background-color: #FF4081;
+    background-color: #ff4545ed;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -43,7 +43,7 @@ h2 {
 }
 
 .button:hover {
-    background-color: #E91E63;
+    background-color: #ff4545ed;
 }
 
 .info {
@@ -56,7 +56,7 @@ h2 {
 }
 
 a {
-    color: #E91E63;
+    color: #ff4545ed;
     text-decoration: none;
 }
 
