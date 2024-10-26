@@ -1,65 +1,129 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
-}
+  /* Resetting default margin and padding */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+ 
+  /* Full-screen layout for mobile devices */
+  html, body {
+      height: 100%;
+      width: 100%;
+      background-color: #000; /* Black background */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+ 
+  /* Card Styling */
+  .card {
+      width: 90%; /* Takes up most of the mobile screen */
+      max-width: 400px;
+      background-color: #fff; /* White card background */
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+  }
+ 
+  /* Logo Styling */
+  .logo-container img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+  }
+ 
+  /* Company Name Styling */
+  .company-name {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.5rem;
+      color: #e74c3c;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+ 
+  /* "Since 1999" Styling */
+  .since {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 10px;
+      font-style: italic;
+  }
+ 
+ /* Tagline Styling */
+  .tagline {
+      font-size: 1rem;
+      color: #e74c3c;
+      margin-bottom: 15px;
+      font-weight: bold;
+  }
+ 
+ /* Owner Name Styling */
+  .owner-name {
+      font-size: 1.2rem;
+      color: #34495e;
+      margin-bottom: 15px;
+  }
+ 
+  /* Button Container */
+  .actions {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+  }
+ 
+  /* Button Styling */
+  .button {
+      background-color: #e74c3c;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 30%;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
 
-.card {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #37474F;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-}
+   .button:hover {
+      background-color: #c0392b;
+    }
+ 
+   .info{
+      background-color: #f6f2e6;
+      color: #2c3e50(0, 0, 0);
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: left;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-.company{
-    margin-top: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ff4545ed;
-}
+    .info a {
+        color: #e74c3c;
+        text-decoration: none;
+    }
 
-h2 {
-    margin-top: 5px;
-    font-size: 1.2rem;
-}
+    .icon{
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
 
-.actions {
-    display: flex;
-    justify-content: space-around;
-    margin: 15px 0;
-}
+    .products{
+        /* width: 20px; */
+        /* height: 20px; */
+        vertical-align: middle;
+        margin-top: 10px;
+    }
 
-.button {
-    background-color: #ff4545ed;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: #ff4545ed;
-}
-
-.info {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: left;
-    margin-top: 20px;
-}
-
-a {
-    color: #ff4545ed;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+    .products p{
+        /* width: 20px; */
+        /* line-height: 1.5; */
+        vertical-align: middle;
+        /* margin: 5px 0; */
+    }
+ 
