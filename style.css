@@ -1,44 +1,46 @@
+/* Resetting default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Full-screen layout for mobile devices */
+/* Full-screen layout */
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #000; /* Black background */
+    background-color: #f5f5f5; /* Light background */
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; /* Small padding for mobile screens */
+    justify-content: start;
+    align-items: first baseline;
+    padding: 10px;
 }
 
 /* Card Styling */
 .card {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 400px;
-    background-color: #fff; /* White card background */
+    width: 100%;
+    max-width: 600px; /* Wider card */
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
 }
 
 /* Logo Styling */
 .logo-container img {
-    max-width: 100px;
+    max-width: 150px; /* Limit logo size */
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Optional: Circular logo */
 }
 
 /* Company Name Styling */
 .company-name {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    color: #e74c3c; /* Red for company name */
+    font-size: 1.8rem;
+    color: #e74c3c; /* Red color */
     margin-bottom: 5px;
     font-weight: bold;
     text-transform: uppercase;
@@ -47,7 +49,7 @@ html, body {
 /* "Since 1999" Styling */
 .since {
     font-size: 1rem;
-    color: #333; /* Dark gray text */
+    color: #333;
     margin-bottom: 10px;
     font-style: italic;
 }
@@ -55,7 +57,7 @@ html, body {
 /* Tagline Styling */
 .tagline {
     font-size: 1rem;
-    color: #e74c3c; /* Red for tagline */
+    color: #e74c3c;
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -63,49 +65,50 @@ html, body {
 /* Owner Name Styling */
 .owner-name {
     font-size: 1.2rem;
-    color: #34495e; /* Dark gray for owner name */
-    margin-bottom: 15px;
+    color: #34495e;
+    margin-bottom: 20px;
 }
 
 /* Button Container */
 .actions {
     display: flex;
-    flex-wrap: wrap; /* Ensures buttons wrap if needed */
     justify-content: space-around;
-    margin: 15px 0;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
 }
 
 /* Button Styling */
 .button {
-    background-color: #e74c3c; /* Red buttons */
+    background-color: #e74c3c;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 8px;
     font-weight: bold;
-    width: 45%; /* Buttons take up half the width */
+    flex: 1;
+    max-width: 30%; /* Each button takes up 30% */
     text-align: center;
-    margin: 5px 0; /* Space between buttons */
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b;
 }
 
 /* Info Section */
 .info {
-    background-color: #f7f7f7; /* Light gray background */
-    color: #2c3e50; /* Dark text for readability */
+    background-color: #f7f7f7;
+    color: #2c3e50;
     border-radius: 8px;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .info a {
-    color: #e74c3c; /* Red links */
+    color: #e74c3c;
     text-decoration: none;
 }
 
@@ -113,44 +116,30 @@ html, body {
     text-decoration: underline;
 }
 
-/* Icon Styling */
-.icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
 /* Products Section Styling */
 .products {
-    margin-top: 10px;
+    margin-top: 15px;
+    text-align: center
 }
 
 .products p {
     margin: 5px 0;
     line-height: 1.5;
-    color: #2c3e50; /* Same as info text */
+    color: #2c3e50;
 }
 
-/* Media Query for Smaller Devices */
+/* Media Query for Smaller Screens */
 @media (max-width: 600px) {
     .card {
-        padding: 15px; /* Reduce padding for smaller screens */
+        padding: 15px;
     }
 
     .company-name {
-        font-size: 1.3rem; /* Adjust font size */
-    }
-
-    .owner-name {
-        font-size: 1.1rem; /* Adjust font size */
+        font-size: 1.5rem;
     }
 
     .button {
-        width: 100%; /* Full width buttons on smaller screens */
-    }
-
-    .actions {
-        gap: 10px; /* Add space between buttons */
+        flex: 1 1 100%; /* Buttons take full width on small screens */
     }
 }
+
